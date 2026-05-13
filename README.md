@@ -20,7 +20,7 @@ Xidian University
 ## Abstract
 
 <figure align="center">
-  <img src="Figure/Overall.png" alt="Overall Framework" width="800">
+  <img src="fig/Overall.png" alt="Overall Framework" width="800">
   <figcaption><em>Figure: Overall structure of PC<sup>2</sup>F.</em></figcaption>
 </figure>
 
@@ -75,17 +75,29 @@ mkdir ./pretrained_weights
 ------------------------------------------------------------------------
 
 ### Project Structure
-
-/path/to/Code/Shell  
-├── Ablation        #All ablation  
-│   &emsp;&emsp;├── RISBench  
-│   &emsp;&emsp;├── RRSIS-D  
-│   &emsp;&emsp;└── RefSegRS  
-└── Result          #All result 
-      &emsp;&emsp;&emsp;├── RISBench  
-      &emsp;&emsp;&emsp;├── RRSIS-D  
-      &emsp;&emsp;&emsp;├── RefSegRS  
-      &emsp;&emsp;&emsp;└── RefOPT  
+```tree
+|-- Ablation
+|   `-- DIOR-RSVG
+|       |-- test_CFM.sh
+|       |-- test_CFM_RAR.sh
+|       |-- test_RAR.sh
+|       |-- test_TAC.sh
+|       |-- test_TAC_CFM.sh
+|       |-- test_TAC_RAR.sh
+|       |-- train_CFM.sh
+|       |-- train_CFM_RAR.sh
+|       |-- train_RAR.sh
+|       |-- train_TAC.sh
+|       |-- train_TAC_CFM.sh
+|       `-- train_TAC_RAR.sh
+`-- Result
+    |-- DIOR-RSVG
+    |   |-- test_DIOR.sh
+    |   `-- train_DIOR.sh
+    `-- OPT-RSVG
+        |-- test_OPT.sh
+        `-- train_OPT.sh
+```
 ### *Part I --- Ablation Experiments*
 
 Ablation scripts evaluate the contribution of different modules and
@@ -94,7 +106,7 @@ hyperparameters.
 ### Step 1: Navigate to Ablation Directory
 
 ``` bash
-cd /path/to/Code/Shell/Ablation
+cd /path/to/PCCF/shell/Ablation
 ```
 
 ------------------------------------------------------------------------
@@ -106,17 +118,17 @@ cd /path/to/Code/Shell/Ablation
 Run training:
 
 ``` bash
-bash Code/Shell/Ablation/DIOR-RSVG/train_TAC.sh
-bash Code/Shell/Ablation/DIOR-RSVG/train_CFM.sh
-bash Code/Shell/Ablation/DIOR-RSVG/train_RAR.sh
+bash PCCF/shell/Ablation/DIOR-RSVG/train_TAC.sh
+bash PCCF/shell/Ablation/DIOR-RSVG/train_CFM.sh
+bash PCCF/shell/Ablation/DIOR-RSVG/train_RAR.sh
 ```
 
 Run evaluation:
 
 ``` bash
-bash Code/Shell/Ablation/DIOR-RSVG/test_TAC.sh
-bash Code/Shell/Ablation/DIOR-RSVG/test_CFM.sh
-bash Code/Shell/Ablation/DIOR-RSVG/test_RAR.sh
+bash PCCF/shell/Ablation/DIOR-RSVG/test_TAC.sh
+bash PCCF/shell/Ablation/DIOR-RSVG/test_CFM.sh
+bash PCCF/shell/Ablation/DIOR-RSVG/test_RAR.sh
 ```
 
 ------------------------------------------------------------------------
@@ -177,15 +189,15 @@ nohup bash script_name.sh > output.log 2>&1 &
 Table 1: Comparison with SOTA methods on DIOR-RSVG  testing dataset. 
 
 <figure align="center">
-  <img src="Figure/Tabel1.png" alt="Tabel 1" width="800">
-  <figcaption><em>Figure: Comparison with SOTA methods on DIOR-RSVG  testing dataset. .</em></figcaption>
+  <img src="fig/Tabel1.png" alt="Tabel 1" width="800">
+  <figcaption><em></em></figcaption>
 </figure>
 
 Table 2: Comparison with SOTA methods on OPT-RSVG validation and testing dataset. 
 
 <figure align="center">
-  <img src="Figure/Tabel2.png" alt="Tabel 2" width="800">
-  <figcaption><em>Figure: Table 2: Comparison with SOTA methods on OPT-RSVG validation and testing dataset. </em></figcaption>
+  <img src="fig/Tabel2.png" alt="Tabel 2" width="800">
+  <figcaption><em></em></figcaption>
 </figure>
 
 
