@@ -9,7 +9,7 @@ Xidian University
 ## Table of Contents
 
 - [Abstract](#?Abstract)
-- [Setting Up](Setting Up)
+- [Setting Up](#Setting-Up)
   - [Preliminaries](#preliminaries)
   - [Initialization Weights for Training](#initialization-weights-for-training)
   - [Shell Structure](#Shell-Structure)
@@ -118,17 +118,17 @@ cd /path/to/PCCF/shell/Ablation
 Run training:
 
 ``` bash
-bash PCCF/shell/Ablation/DIOR-RSVG/train_TAC.sh
-bash PCCF/shell/Ablation/DIOR-RSVG/train_CFM.sh
-bash PCCF/shell/Ablation/DIOR-RSVG/train_RAR.sh
+bash shell/Ablation/DIOR-RSVG/train_TAC.sh
+bash shell/Ablation/DIOR-RSVG/train_CFM.sh
+bash shell/Ablation/DIOR-RSVG/train_RAR.sh
 ```
 
 Run evaluation:
 
 ``` bash
-bash PCCF/shell/Ablation/DIOR-RSVG/test_TAC.sh
-bash PCCF/shell/Ablation/DIOR-RSVG/test_CFM.sh
-bash PCCF/shell/Ablation/DIOR-RSVG/test_RAR.sh
+bash shell/Ablation/DIOR-RSVG/test_TAC.sh
+bash shell/Ablation/DIOR-RSVG/test_CFM.sh
+bash shell/Ablation/DIOR-RSVG/test_RAR.sh
 ```
 
 ------------------------------------------------------------------------
@@ -186,14 +186,12 @@ nohup bash script_name.sh > output.log 2>&1 &
 
 ## Results
 
-Table 1: Comparison with SOTA methods on DIOR-RSVG  testing dataset. 
 
 <figure align="center">
   <img src="fig/Tabel1.png" alt="Tabel 1" width="800">
   <figcaption><em></em></figcaption>
 </figure>
 
-Table 2: Comparison with SOTA methods on OPT-RSVG validation and testing dataset. 
 
 <figure align="center">
   <img src="fig/Tabel2.png" alt="Tabel 2" width="800">
