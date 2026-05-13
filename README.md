@@ -12,7 +12,7 @@ Xidian University
 - [Setting Up](Setting Up)
   - [Preliminaries](#preliminaries)
   - [Initialization Weights for Training](#initialization-weights-for-training)
-  - [Project Structure](#Project-Structure)
+  - [Shell Structure](#Shell-Structure)
 - [Results](#Results)
 
 ---
@@ -74,7 +74,7 @@ mkdir ./pretrained_weights
 
 ------------------------------------------------------------------------
 
-### Project Structure
+### Shell Structure
 ```tree
 |-- Ablation
 |   `-- DIOR-RSVG
@@ -136,7 +136,7 @@ bash PCCF/shell/Ablation/DIOR-RSVG/test_RAR.sh
 ### *Part II --- Final (Main) Experiments*
 Final experiment scripts are located in:
 
-    /path/to/Code/Shell/Result
+    /path/to/PCCF/shell/Result
 
 These scripts reproduce the final reported results for each dataset.
 
@@ -145,7 +145,7 @@ These scripts reproduce the final reported results for each dataset.
 **DIOR-RSVG**
 
 ``` bash
-cd /path/to/Code/Shell/Result/DIOR-RSVG
+cd /path/to/PCCF/shell/Result/DIOR-RSVG
 bash train_DIOR.sh
 bash test_DIOR.sh
 ```
@@ -153,7 +153,7 @@ bash test_DIOR.sh
 **OPT-RSVG**
 
 ``` bash
-cd /path/to/Code/Shell/Result/OPT-RSVG
+cd /path/to/PCCF/shell/Result/OPT-RSVG
 bash train_OPT.sh
 bash test_OPT.sh
 ```
