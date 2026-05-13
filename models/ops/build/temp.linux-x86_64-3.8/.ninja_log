@@ -1,0 +1,4 @@
+# ninja log v5
+0	2822	1758387487762162317	/data/LQVG/models/ops/build/temp.linux-x86_64-3.8/data/LQVG/models/ops/src/cpu/ms_deform_attn_cpu.o	ca24407a18f539de
+0	9571	1758387494502180014	/data/LQVG/models/ops/build/temp.linux-x86_64-3.8/data/LQVG/models/ops/src/cuda/ms_deform_attn_cuda.o	e7c85227dedff58e
+0	14081	1758387499018191259	/data/LQVG/models/ops/build/temp.linux-x86_64-3.8/data/LQVG/models/ops/src/vision.o	995f0ed4b245ce30
