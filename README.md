@@ -44,8 +44,8 @@ The code has been verified with **PyTorch v1.8.1** and **Python 3.8.19**.
 1. Create and activate the conda environment:
 
 ```bash
-conda create -n PC2F python==3.8.19
-conda activate PC2F
+conda create -n PCCF python==3.8.19
+conda activate PCCF
 ```
 
 2. Install PyTorch v1.8.1 with a CUDA version that works on your machine (CUDA 11.1 in this example):
